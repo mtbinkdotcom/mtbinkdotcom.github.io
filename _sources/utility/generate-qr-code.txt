@@ -1,0 +1,13 @@
+Generate QR code
+================
+
+:Author: |author|
+
+utility
+-------
+
+note
+----
+
+#.  The function of this utility is to generate qr code.
+#.  For example, ``http://mtbink.com`` will becomes ``true``.

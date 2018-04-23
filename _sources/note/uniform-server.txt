@@ -1,0 +1,57 @@
+Coral/Uniform Server
+====================
+
+:Author: |author|
+
+..  _label_uniserver_special_setup:
+
+Special setup
+-------------
+
+#.  Put the **Coral_8_9_2.exe** in a path **without spaces**, usually 
+    ``%USERPROFILE%`` (becomes **C:\\Users\\USERNAME**).
+    
+    For window **7-Zip self-extracting archive**, simply click **Extract** and 
+    wait until it finished.
+    
+    **UniServer** folder is automatically created.
+    
+#.  Click **C:\\Users\\USERNAME\\UniServer\\Start_as_program.exe**.
+
+    For window **Change MySQL Password!**, choose **No**.
+    
+    For window **Start-up options skipped!**, choose **Yes**.
+    
+#.  **Server configuration > Apache > Edit Basic Configuration > Listen port:** ``8080``
+
+    Click **Update Configuration** and close that window.
+
+#.  On main window click **Start Apache**.
+
+    ``http://localhost:8080/us_splash/index.php`` will be open in a browser.
+    
+    Now, click **Stop Apache** and close the main window.
+
+#.  I want my website files to be on another drive letter (E:) not current (C:)
+
+    so I need to edit the ``UniServer\usr\local\apache2\conf\httpd.conf`` file:
+
+    #.  Basically it is just replacing this exact string::
+        
+                C:/Users/USERNAME/UniServer/www
+
+        with the path that you want::
+        
+                E:/t/c/Dropbox/i
+        
+        for my setup.
+        
+        Beware of **USERNAME** and the forward slash (/).
+        
+        At the time of writing, 28 October 2016 (Friday) 09:36:24 PM GMT+08:00, these happen at 2 lines::
+            
+                Line 261 old : DocumentRoot "C:/Users/USERNAME/UniServer/www"
+                Line 261 new : DocumentRoot "E:/t/c/Dropbox/i"
+
+                Line 288 old : <Directory "C:/Users/USERNAME/UniServer/www">
+                Line 288 new : <Directory "E:/t/c/Dropbox/i">

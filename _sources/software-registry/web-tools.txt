@@ -1,0 +1,126 @@
+Web tools
+=========
+
+:Author: |author|
+
+
+
+list
+----
+
+#.  `jQuery <http://jquery.com/download/>`_ - Various JavaScript utilities.
+
+    **Note**: 
+
+    Download the **\*min.js** but rename to just **jquery.js**
+
+#.  `Underscore.js <http://underscorejs.org/>`_ - Contains great array functions
+
+    **Note**: 
+
+    Download the **\*min.js** but rename to just **underscore.js**
+
+#.  `Material Design Lite <https://getmdl.io/started/index.html#download>`_ - The lite version for Material Design.
+
+    **Note**: 
+
+    #.  only these are needed:
+        
+        #.  material.min.js
+        #.  material.min.css
+
+#.  `Material Icons <https://github.com/google/material-design-icons/>`_ - Material Icons
+
+    **Note**: 
+
+    #.  Download .zip at https://github.com/google/material-design-icons/
+        and extract it. Only folder **iconfont** needed.
+        
+    #.  only these are needed:
+        
+        #.  MaterialIcons-Regular.eot
+        #.  MaterialIcons-Regular.woff2
+        #.  MaterialIcons-Regular.woff
+        #.  MaterialIcons-Regular.ttf
+
+#.  `odometer <https://github.com/HubSpot/odometer/releases>`_ - Animate counter.
+
+    **Note**: 
+
+    Only "**odometer.min.js**" and "**theme/odometer-theme-minimal.css**" are needed
+
+#.  `string.js <https://github.com/jprichardson/string.js/releases>`_ - Various string function.
+
+    **Note**: 
+
+    Only **dist/string.min.js** needed
+
+#.  `jsUri <https://github.com/derek-watson/jsUri/releases>`_ - Fluent javascript uri/url parsing and manipulation.
+
+    **Note**: 
+
+    Only **Uri.js** needed
+
+#.  `jQuery UI datepicker <http://jqueryui.com/download/>`_ - Date picker.
+
+    **Note**: 
+
+    #.  Only "**jquery-ui.min.js**" and "**jquery-ui.min.css**" are needed
+    #.  I only need these in Download Builder:
+     
+        *   **Core**
+        *   **Widgets/Datepicker**
+        *   **Effects/Effects Core**
+        *   **Effects/Drop Effect**
+        *   select **No Theme**
+
+#.  `jQuery qrcode <https://github.com/jeromeetienne/jquery-qrcode>`_ - Generate QR code.
+
+    **Note**: 
+
+    Only **jquery.qrcode.min.js** needed
+
+#.  `MathJax <https://github.com/mathjax/MathJax/releases>`_ - Show math document in browser.
+
+    **Note**: 
+
+    #.  Rename top folder to "**MathJax**".
+    #.  We need to cut down this monster folder of 31791 files (53.3 MB):
+    
+        *  delete folder **docs**
+        *  delete folder **images**
+        *  delete folder **localization**
+        *  delete folder **test**
+        *  delete folder **unpacked**
+        *  delete folder **extensions\MathML**
+        *  in the folder **fonts\HTML-CSS**, just leave **TeX**
+        *  in the folder **fonts\HTML-CSS\TeX**, just leave **woff**
+        *  in the folder **jax\input**, just leave **TeX**
+        *  in the folder **jax\output**, just leave **HTML-CSS**
+        *  in the folder **jax\output\HTML-CSS\fonts**, just leave **TeX**
+        *  in the top folder, only **MathJax.js** is important, delete other files ``*.*`` (not other folders)
+    #.  Now we have just 198 files (3.94 MB) as of ``2013-11-11T05:39:02-08:00``
+
+#.  `Table Sorter <https://neil.fraser.name/software/tablesort/>`_ - Sort table
+
+    **Note**: 
+
+    Only **tablesort-min.js** needed
+
+#.  `jsdiff <http://kpdecker.github.io/jsdiff/>`_ - A javascript text differencing implementation.
+
+    **Note**: 
+
+    View-source, only **diff.js** needed
+
+#.  `Roboto font <https://getmdl.io/styles/index.html>`_ - Roboto font
+
+    **Note**: 
+
+    All TTF fonts are needed.
+
+#.  `moment.js <https://github.com/moment/moment/releases>`_ - A JavaScript date library for parsing, validating, manipulating, and formatting dates.
+
+    **Note**: 
+
+    Only **moment.min.js** needed

@@ -1,0 +1,36 @@
+Notepad++ plugin
+================
+
+:Author: |author|
+
+
+
+Inside Plugin Manager
+---------------------
+
+#.  **Plugins > Plugin Manager > Show Plugin Manager > Available**
+
+    #.  **Code alignment** - To align code at certain character, for example, equal symbol (=).
+    
+    #.  **FingerText** - Text expander.
+    
+    #.  **JSTool** - JavaScript code formatter
+    
+        **Note**: 
+    
+        **JSTool > Options... > Use** ``4`` **spaces instead of tab (\t)**.
+    
+    #.  **XML Tools** - Formatting XML-based files.
+    
+
+
+Outside Plugin Manager
+----------------------
+
+#.  `NppJavaScript / JavaScript Macro <http://www.fesevur.com/nppjavascript>`_ - JavaScript macro programming for Notepad++
+
+    **Note**: 
+
+    Copy **NppJavaScript.dll** to the **plugins** directory and restart Notepad++.
+
+

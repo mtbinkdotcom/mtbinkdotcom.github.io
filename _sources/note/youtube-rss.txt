@@ -1,0 +1,25 @@
+Get the YouTube RSS
+===================
+
+:Author: |author|
+
+note
+----
+
+#.  To get the RSS for **mtbinkdotcom** YouTube channel, use the URL
+    http://gdata.youtube.com/feeds/base/users/mtbinkdotcom/uploads?alt=rss&orderby=published&client=ytapi-youtube-profile
+   
+    ..  note:: 
+   
+        This is no longer working as of 01 October 2016 (Saturday) 
+        06:49:26 PM GMT+08:00
+
+#.  The best video type to download is **720p**::
+
+        -  720p
+        -  medium
+        -  hq5
+        -  hq36
+        -  mobile
+
+

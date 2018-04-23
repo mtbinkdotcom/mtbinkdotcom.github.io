@@ -1,0 +1,17 @@
+XHTML preview
+=============
+
+:Author: |author|
+
+utility
+-------
+
+note
+----
+
+#.  The function of this utility is to preview XHTML.
+#.  For example, ``<b>bold</b><i>italic</i>`` will becomes
+
+    ..  raw:: html
+
+        <b>bold</b><i>italic</i>

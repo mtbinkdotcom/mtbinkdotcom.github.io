@@ -1,0 +1,13 @@
+Prime factorization
+===================
+
+:Author: |author|
+
+utility
+-------
+
+note
+----
+
+#.  The function of this utility is to find prime factorization.
+#.  For example, ``123480`` will becomes ``123480=2^{3}\times3^{2}\times5\times7^{3}\\\begin{align}2&\mid123480\\2&\mid61740\\2&\mid30870\\3&\mid15435\\3&\mid5145\\5&\mid1715\\7&\mid343\\7&\mid49\\7&\mid7\end{align}``.

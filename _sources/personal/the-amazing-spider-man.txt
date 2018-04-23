@@ -1,0 +1,29 @@
+The Amazing Spider-Man
+======================
+
+:Author: |author|
+
+note
+----
+
+#.  I watched The Amazing Spider-Man for 12 times:
+
+    #.  2012-07-10
+    #.  2012-07-11
+    #.  2012-07-12
+    #.  2012-07-14
+    #.  2012-07-18
+    #.  2012-07-21
+    #.  2012-07-22
+    #.  2012-07-28
+    #.  2012-08-04
+    #.  2012-08-09
+    #.  2012-08-14
+    #.  2012-08-15
+    
+    |images_tasm|
+    
+    Related: http://instagram.com/p/oE-k4ICzOz/
+   
+..  |images_tasm| image:: /images/tasm.png
+

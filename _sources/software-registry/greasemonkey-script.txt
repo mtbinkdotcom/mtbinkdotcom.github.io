@@ -1,0 +1,17 @@
+Greasemonkey script
+===================
+
+:Author: |author|
+
+
+
+list
+----
+
+#.  `YouTube Center <https://greasyfork.org/en/scripts/943-youtube-center/code>`_ - Disable YouTube DASH playback.
+
+    **Note**: 
+
+    **Player > Dash Playback (Untick)**
+
+

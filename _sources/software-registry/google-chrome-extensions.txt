@@ -1,0 +1,27 @@
+Google Chrome extensions
+========================
+
+:Author: |author|
+
+
+
+list
+----
+
+#.  `Alexa Traffic Rank <https://chrome.google.com/webstore/detail/alexa-traffic-rank/cknebhggccemgcnbidipinkifmmegdel>`_ - Alexa Traffic Rank.
+
+#.  `Auto Refresh Plus <https://chrome.google.com/webstore/detail/auto-refresh-plus/ohfjpkccecpdfkpmfocndhepolhljfhg>`_ - Auto refresh web page.
+
+#.  `Checker Plus for Gmail <https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj>`_ - Show the total unread emails in Gmail inbox and notify the user for new incoming email.
+
+#.  `Checker Plus for Google Calendar <https://chrome.google.com/webstore/detail/checker-plus-for-google-c/hkhggnncdpfibdhinjiegagmopldibha>`_ - Google Calendar checker.
+
+#.  `Google Cast (Beta) <https://chrome.google.com/webstore/detail/google-cast-beta/dliochdbjfkdbacpmhlcpmleaejidimm>`_ - Google Cast.
+
+#.  `Markdown Here <https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa>`_ - Use Markdown when composing email in Gmail.
+
+#.  `RSS Subscription Extension (by Google) <https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd>`_ - Provides Google Chrome to read RSS file.
+
+#.  `SearchPreview <https://chrome.google.com/webstore/detail/searchpreview/hcjdanpjacpeeppdjkppebobilhaglfo>`_ - Provides thumbnail in search result page.
+
+#.  `Session Buddy <https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko>`_ - Session import/export.

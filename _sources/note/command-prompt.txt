@@ -1,0 +1,430 @@
+Command Prompt (batch file) notes
+=================================
+
+:Author: |author|
+
+note
+----
+
+#.  We use these for all the examples below:
+
+    *   folder path (from) = ``E:\folder1``
+    *   folder path (to) = ``E:\folder2``
+    *   original file path = ``E:\folder1\file1.txt``
+    *   EXE file = ``E:\PeaZipPortable\PeaZipPortable.exe``
+    
+#.  Command that we will use:
+
+    ..  code-block:: bat
+   
+        CLIP
+        ECHO
+        PAUSE
+        SET
+        FOR
+        FORFILES
+        PING
+        IF EXIST
+        DIR
+        TYPE
+        RMDIR
+        DEL
+        MKDIR
+        RENAME
+        MOVE
+        XCOPY
+        COPY
+        TASKKILL
+        START
+        
+Quick way to open Command Prompt in current folder
+--------------------------------------------------
+
+#.  Just type ``cmd`` at the address bar or
+
+#.  ``Shift`` + ``right-click`` then click **Open command window here** or
+
+#.  For Windows 10, click **File > Open command prompt**
+
+Copy to clipboard
+-----------------
+
+List all the files and folders inside current folder and then copy to clipboard
+
+..  code-block:: bat
+
+    DIR /B | CLIP
+        
+Save to a file
+--------------
+
+List all the files and folders inside current folder and then save to list.txt
+
+..  code-block:: bat
+
+    DIR /B > list.txt
+   
+Display text
+------------
+
+#.  Turns command-echoing off
+
+    ..  code-block:: bat
+
+        @ECHO OFF
+    
+#.  display hello world
+
+    ..  code-block:: bat
+
+        @ECHO OFF
+        ECHO hello world
+        PAUSE
+
+Read user input and branching
+-----------------------------
+
+..  code-block:: bat
+
+    ECHO Select a file:
+    ECHO     1 = one.xml
+    ECHO     2 = two.xml
+    ECHO ? 
+    SET /P file=
+    IF %file%==1 (
+    ECHO you select one.xml
+    )
+    IF %file%==2 (
+    ECHO you select two.xml
+    )    
+        
+FOR loop
+--------
+
+#.  Prints 10 then 11 then 12
+
+    ..  code-block:: bat
+
+        FOR %%A IN (10 11 12) DO ECHO %%A
+
+Do operation to all selected files
+----------------------------------
+
+..  code-block:: bat
+
+    FORFILES /M *.txt /C "CMD /C ECHO @FNAME is a TXT file"
+        
+About currently running batch file
+----------------------------------
+    
+get parent folder
+*****************
+
+..  code-block:: bat
+
+    %~dp0
+    
+get filename without extension
+******************************
+
+..  code-block:: bat
+
+    %~n0
+
+get filename with extension (base)
+**********************************
+
+..  code-block:: bat
+
+    %~nx0
+
+previously, I used:
+
+..  code-block:: bat
+
+    %~n0%~x0
+
+other variables
+***************
+
+just study the notes of:
+
+..  code-block:: bat
+
+    FOR /?
+        
+Suspends processing
+-------------------
+
+pause
+*****
+
+..  code-block:: bat
+
+    PAUSE
+    
+Pause for 5 seconds
+*******************
+
+..  code-block:: bat
+
+    PING 1.1.1.1 -n 1 -w 5000 > NUL
+
+List all the files and folders inside a folder
+----------------------------------------------
+
+a given folder
+**************
+
+..  code-block:: bat
+
+    DIR "E:\folder1" /B
+
+current folder
+**************
+
+..  code-block:: bat
+
+    DIR /B
+
+current folder and then copy to clipboard
+*****************************************
+
+..  code-block:: bat
+
+    DIR /B | CLIP
+    
+current folder and then save to list.txt
+****************************************
+
+..  code-block:: bat
+
+    DIR /B > list.txt
+    
+also include items in subfolders
+********************************
+
+..  code-block:: bat
+
+    DIR "E:\folder1" /B /S
+
+list only files
+***************
+
+..  code-block:: bat
+
+    DIR "E:\folder1" /A:-D /B
+
+list only folders
+*****************
+
+..  code-block:: bat
+
+    DIR "E:\folder1" /A:D /B
+    
+sort files by extension
+***********************
+
+..  code-block:: bat
+
+    DIR /A:-D /B /O:E 
+    
+Check if exist
+--------------
+
+folder
+******
+
+..  code-block:: bat
+
+    IF EXIST "E:\folder1" (
+    ECHO folder exist
+    )
+
+file
+****
+
+..  code-block:: bat
+
+    IF EXIST "E:\folder1\file1.txt" (
+    ECHO file exist
+    )
+
+Show the content of a text file
+-------------------------------
+
+..  code-block:: bat
+
+    TYPE "E:\folder1\file1.txt"
+    
+Delete
+------
+
+folder
+******
+
+..  code-block:: bat
+
+    IF EXIST "E:\folder1" (
+    RMDIR /S /Q "E:\folder1"
+    )
+
+file
+****
+
+..  code-block:: bat
+
+    IF EXIST "E:\folder1\file1.txt" (
+    DEL /F /Q "E:\folder1\file1.txt"
+    )
+    
+Create
+------
+
+folder
+******
+
+..  code-block:: bat
+
+    MKDIR "E:\folder1"
+
+empty file
+**********
+
+..  code-block:: bat
+
+    TYPE NUL > "E:\folder1\file1.txt"
+
+Rename
+------
+
+folder
+******
+
+..  code-block:: bat
+
+    RENAME "E:\folder1" "folder2"
+
+file
+****
+
+..  code-block:: bat
+
+    RENAME "E:\folder1\file1.txt" "file2.txt"
+
+Notice that when renaming folder/file, **there is no path info in the destination**
+
+Concatenate all CSS files into generated.css
+--------------------------------------------
+
+..  code-block:: bat
+
+    IF EXIST generated.css (
+    DEL /F /Q generated.css
+    )
+    IF EXIST generated.css.temp (
+    DEL /F /Q generated.css.temp
+    )
+    TYPE *.css > generated.css.temp
+    RENAME generated.css.temp generated.css
+
+Move/Cut
+--------
+
+folder
+******
+
+..  code-block:: bat
+
+    MOVE /Y "E:\folder1" "E:\folder2"
+
+folder1 is now moved to folder2. folder1 is now inside folder2.
+
+file
+****
+
+..  code-block:: bat
+
+    MOVE /Y "E:\folder1\file1.txt" "E:\folder2\file1.txt"
+
+Copy
+----
+
+folder
+******
+
+#.  Displays full source and destination file names while copying (``/F``):
+ 
+    ..  code-block:: bat
+
+        XCOPY "E:\folder1" "E:\folder2\folder1" /E /C /I /F /G /H /R /K /Y 
+        
+#.  Displays files that would be copied (``/L``):
+ 
+    ..  code-block:: bat
+
+        XCOPY "E:\folder1" "E:\folder2\folder1" /E /C /I /F /L /G /H /R /K /Y 
+
+#.  Does not display file names while copying (``/Q``):
+ 
+    ..  code-block:: bat
+
+        XCOPY "E:\folder1" "E:\folder2\folder1" /E /C /I /Q /G /H /R /K /Y
+        
+#.  Creates directory structure, but does not copy files. (``/T``):
+ 
+    ..  code-block:: bat
+
+        XCOPY "E:\folder1" "E:\folder2\folder1" /E /C /I /F /G /H /R /T /K /Y
+        
+file
+****
+
+..  code-block:: bat
+
+    COPY /V /Y "E:\folder1\file1.txt" "E:\folder2\file1.txt"
+
+End/Kill task
+-------------
+
+End task all opened Command Prompt
+**********************************
+
+..  code-block:: bat
+
+    TASKKILL /IM cmd.exe /T /F
+    
+End task Microsoft Excel
+************************
+
+..  code-block:: bat
+
+    TASKKILL /IM EXCEL.EXE /T /F
+    
+End task explorer.exe and restart it
+************************************
+
+..  include:: /files/restart-explorer.txt    
+    
+Starting an EXE file
+--------------------
+
+Normal EXE file with GUI
+************************
+
+..  code-block:: bat
+
+    START "" "E:\PeaZipPortable\PeaZipPortable.exe"
+
+Open Control Panel items
+------------------------
+
+#.  Fonts:
+
+    ..  code-block:: bat
+
+        control fonts
+        
+#.  https://support.microsoft.com/en-us/kb/192806
+
+#.  http://www.pctools.com/guides/registry/detail/61/

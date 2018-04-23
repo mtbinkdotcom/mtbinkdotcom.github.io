@@ -1,0 +1,78 @@
+Mozilla Firefox Add-ons
+=======================
+
+:Author: |author|
+
+
+
+list
+----
+
+#.  `Auto Refresh <https://addons.mozilla.org/en-us/firefox/addon/auto-refresh/>`_ - Auto refresh web page.
+
+#.  `Check4Change <https://addons.mozilla.org/en-US/firefox/addon/check4change/>`_ - Monitor text changes in a webpage.
+
+#.  `Cleanest Addon Manager <https://addons.mozilla.org/en-US/firefox/addon/cam/>`_ - Compact the Addon Manager.
+
+#.  `ColorZilla <https://addons.mozilla.org/en-US/firefox/addon/colorzilla/>`_ - Check the colour of an element in a web page.
+
+#.  `Context Search <https://addons.mozilla.org/en-US/firefox/addon/context-search/>`_ - Right-click search menu.
+
+#.  `CSS Usage <https://addons.mozilla.org/en-US/firefox/addon/css-usage/>`_ - Firebug extension to view which CSS rules are actually used.
+
+#.  `DownThemAll! <https://addons.mozilla.org/en-US/firefox/addon/downthemall/>`_ - Download accelerator and manager.
+
+#.  `FEBE <https://addons.mozilla.org/en-US/firefox/addon/febe/>`_ - Backuo extensions, profiles, sessions.
+
+#.  `Firebug <https://addons.mozilla.org/en-US/firefox/addon/firebug/>`_ - Web page development tools.
+
+#.  `Firefinder for Firebug <https://addons.mozilla.org/en-US/firefox/addon/firefinder-for-firebug/>`_ - Finds HTML elements matching chosen CSS selector(s) or XPath expression.
+
+#.  `FireQuery <https://addons.mozilla.org/en-US/firefox/addon/firequery/>`_ - Firebug plugin for jQuery development.
+
+#.  `Flagfox <https://addons.mozilla.org/en-US/firefox/addon/flagfox/>`_ - Shows flag icon in the address bar.
+
+#.  `Google search link fix <https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/>`_ - Transform all the links in Google search page into direct links (no more very long gibberish links).
+
+#.  `Greasemonkey <https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/>`_ - Customize any web page using JavaScript.
+
+#.  `iMacros for Firefox <https://addons.mozilla.org/en-US/firefox/addon/imacros-for-firefox/>`_ - Firefox automation.
+
+#.  `Linkification <https://addons.mozilla.org/En-us/firefox/addon/linkification/>`_ - Converts text links into genuine, clickable links.
+
+    **Note**: 
+
+    #.  **Options > Functionality > tick Open Link in New Tab**
+    #.  **Options > Functionality > tick Open New Tab in Background**
+
+#.  `MeasureIt <https://addons.mozilla.org/en-US/firefox/addon/measureit/>`_ - Check the width of an element in a web page.
+
+#.  `Pearl Crescent Page Saver Basic <https://addons.mozilla.org/en-US/firefox/addon/pagesaver/>`_ - Web page screenshot.
+
+#.  `QuickJava <https://addons.mozilla.org/en-US/firefox/addon/quickjava/>`_ - Enable or disable JavaScript / Java / Flash / Silverlight / cookies / images / animated images / CSS
+
+#.  `ReloadAll! <https://addons.mozilla.org/en-US/firefox/addon/reloadall/>`_ - Reload all/some tabs.
+
+#.  `Restartless Restart <https://addons.mozilla.org/En-us/firefox/addon/restartless-restart/>`_ - Bring restart button.
+
+#.  `Save Session <https://addons.mozilla.org/en-US/firefox/addon/save-session/>`_ - Save session and exit
+
+#.  `Scrollbar Search Highlighter <https://addons.mozilla.org/en-US/firefox/addon/scrollbar-search-highlighter/>`_ - An add-on which highlights search terms in the scrollbar(s).
+
+#.  `SearchPreview <https://addons.mozilla.org/en-US/firefox/addon/searchpreview/>`_ - Provides thumbnail in search result page.
+
+#.  `SEO Status PageRank/Alexa Toolbar <https://addons.mozilla.org/en-us/firefox/addon/seo-status-pagerankalexa-toolb/?src=search>`_ - Alexa ranking.
+
+#.  `Session Manager <https://addons.mozilla.org/en-US/firefox/addon/session-manager/>`_ - Session manager.
+
+#.  `Status-4-Evar <https://addons.mozilla.org/en-US/firefox/addon/status-4-evar/>`_ - Bring back the status bar.
+
+#.  `Tab Counter <https://addons.mozilla.org/en-US/firefox/addon/tab-counter/>`_ - Show tab counter.
+
+#.  `tabs2list <https://addons.mozilla.org/en-US/firefox/addon/tabs2list/>`_ - List all the tab(s).
+
+#.  `User Agent Switcher <https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher/>`_ - User agent switcher.
+
+#.  `Video DownloadHelper <https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/>`_ - Download YouTube/Flash video.
+
+#.  `View Source Chart <https://addons.mozilla.org/en-US/firefox/addon/view-source-chart/>`_ - Inspect the DOM graphically.

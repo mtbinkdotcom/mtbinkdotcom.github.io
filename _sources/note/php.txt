@@ -1,0 +1,93 @@
+PHP
+===
+
+:Author: |author|
+
+
+Common script
+-------------
+
+*   loop every file inside a folder
+
+    ..  code-block:: php
+
+        if ( file_exists($folder_path) ) {
+            if ( $dh = opendir($folder_path) ) {
+                while ( ( $f = readdir($dh) ) !== false ) {
+                    if ( $f != "." && $f != ".." ) {
+                        // $f is now a filename
+                    }
+                }
+                closedir($dh);
+            }
+        }
+
+*   for loop
+
+    ..  code-block:: php
+  
+        for ($i = 0, $ii = count($arrayName); $i < $ii; $i++){
+            $ti = $arrayName[$i];
+        }
+      
+        for ($j = 0, $jj = count($arrayName); $j < $jj; $j++){
+            $tj = $arrayName[$j];
+        }
+      
+        for ($k = 0, $kk = count($arrayName); $k < $kk; $k++){
+            $tk = $arrayName[$k];
+        }
+
+*   string replacement
+
+    ..  code-block:: php
+  
+        $a = "mtbink.com";
+        $a = str_replace(".", "dot", $a); // mtbinkdotcom
+
+*   get the timestamp of a file
+
+    ..  code-block:: php
+  
+          date("d F Y (l) h:i:s A", filemtime($file_path) ); 
+          // 19 July 2014 (Saturday) 05:14:08 AM
+          // sometimes: %d %B %Y (%A) %H:%M:%S %p %Z
+      
+        gmdate("c", filemtime($file_path)); // 2014-07-18T21:14:08+00:00
+
+*   string length
+
+    ..  code-block:: php
+
+        strlen("mtbink"); // 6
+
+*   split/join string to array
+
+    ..  code-block:: php
+  
+        explode("=", $string); // split
+        implode("=", $string); // join
+
+*   array count
+
+    ..  code-block:: php
+  
+        count($array);
+
+*   search string position:
+
+    ..  code-block:: php
+  
+        strpos("mtbink","b"); // returns 2
+
+*   search item position in an array
+
+    ..  code-block:: php
+  
+        in_array($value, $arrayName);
+
+*   substring
+
+    ..  code-block:: php
+
+        substr("abcdef", -2); //  returns "ef"

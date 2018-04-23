@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <meta name='viewport'              content='width=device-width,initial-scale=1'/>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+
+        <title>12. Coral/Uniform Server</title>
+        <link rel='shortcut icon' type='image/icon'  href="../_static/favicon.ico?test=1"/>
+        
+        <link rel='stylesheet'    type='text/css'    href='../_static/pygments.css'/>
+        <link rel='stylesheet'    type='text/css'    href='../_static/mtbinkdotcom.css'/>
+
+        <link rel='top'           title='mtbink.com' href='../index.html'/>
+        <link rel='next'          title='13. Yamaha PSR-E333' href='yamaha-psr-e333.html'/>
+        <link rel='prev'          title='11. To-do list after formatting Android' href='to-do-list-after-formatting-android.html'/>
+        
+        <link rel='alternate'     type='application/rss+xml' href='../home.xml'/>
+
+        <link href='https://plus.google.com/110516430179662066042' rel='publisher'/>
+        <link href='https://plus.google.com/110516430179662066042' rel='author'/>
+        
+        <meta property='fb:admins' content='100006749618912' />
+        
+        <meta name='mobile-web-app-capable' content='yes'>
+        
+        <script>var MTBINKDOTCOM_START_TIMESTAMP = new Date();</script>
+        
+    </head>        
+    <body>
+    <div class='mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header'>
+        <header class='mdl-layout__header'>
+            <div class='mdl-layout-icon'></div>
+            <div class='mdl-layout__header-row'>
+                <div class='mdl-layout-spacer'></div>
+                <div class='mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right nfm'>
+                    <form class='search' 
+                          action='../search.html' 
+                          id='formsearch' 
+                          method='get'>
+                        <label class='mdl-button mdl-js-button mdl-button--icon' 
+                               for='fixed-header-drawer-exp'
+                               title='search mtbink.com website'>
+                            <i class='material-icons' style='top:24px;'>&#xE8B6;</i>
+                        </label>
+                        <div class='mdl-textfield__expandable-holder'>
+                            <input class='mdl-textfield__input' 
+                                   type='text' 
+                                   name='q'
+                                   id='fixed-header-drawer-exp'/>
+                            <label class='mdl-textfield__label' for='fixed-header-drawer-exp'>Enter search text</label>
+                        </div>
+                        <input type='hidden' name='check_keywords' value='yes' />
+                        <input type='hidden' name='area' value='default' />
+                    </form> 
+                </div>
+                <a class='mdl-navigation__link'
+                   style='display:none' 
+                   id='drawer_OK' 
+                   title='OK' 
+                   href='javascript:formsearch.submit()'>OK</a>
+                <nav class='mdl-navigation'>
+                    <a class='mdl-navigation__link'
+                       href='../index.html'
+                       title='home'>
+                        <i class='material-icons'>&#xE88A;</i> 
+                        <span class='wider-screen'>home</span>
+                    </a>
+                    <a class='mdl-navigation__link' 
+                       href='to-do-list-after-formatting-android.html' 
+                       title='11. To-do list after formatting Android' 
+                       accesskey='P'>
+                        <i class='material-icons'>&#xE408;</i> 
+                        <span class='wider-screen'>previous</span>
+                    </a>
+                    <a class='mdl-navigation__link' 
+                       href='yamaha-psr-e333.html' 
+                       title='13. Yamaha PSR-E333' 
+                       accesskey='N'>
+                        <span class='wider-screen'>next</span> 
+                        <i class='material-icons'>&#xE409;</i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <div class='mdl-layout__drawer'>
+            <span class='mdl-layout-title'>table of contents</span>
+                <nav class='mdl-navigation' id='localtoc'>
+<ul>
+<li><a class="reference internal" href="#">12. Coral/Uniform Server</a><ul>
+<li><a class="reference internal" href="#special-setup">12.1. Special setup</a></li>
+</ul>
+</li>
+</ul>
+
+                </nav>
+                <span class='mdl-layout-title'>next</span>
+                <nav class='mdl-navigation'>
+                    <a class='mdl-navigation__link' 
+                       href='yamaha-psr-e333.html' 
+                       title='13. Yamaha PSR-E333'
+                       accesskey='N'>13. Yamaha PSR-E333</a>
+                </nav>
+                <span class='mdl-layout-title'>previous</span>
+                <nav class='mdl-navigation'>
+                    <a class='mdl-navigation__link' 
+                       href='to-do-list-after-formatting-android.html' 
+                       title='11. To-do list after formatting Android'
+                       accesskey='P'>11. To-do list after formatting Android</a>
+                </nav>
+        </div>
+        <main class='mdl-layout__content'>
+            <div class='page-content'>
+                <div class='mdl-grid'>
+                    <div id='div_content' class='mdl-cell mdl-cell--9-col'>
+                        <div><span id='pageview_counter'></span><span id='text_pageview_of'>&nbsp;</span><span id='total_pageview_counter'></span></div>
+<div class='mdl-grid mdl-tabs__tab-bar2'>
+    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#utility'           title='utility'>utility</a></div>
+    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#note'              title='note'>note</a></div>
+    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#software-registry' title='software registry'>software registry</a></div>
+    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#product'           title='product'>product</a></div>
+    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#personal'          title='personal'>personal</a></div>
+</div>
+<ul>
+<li><a class="reference internal" href="#">12. Coral/Uniform Server</a><ul>
+<li><a class="reference internal" href="#special-setup">12.1. Special setup</a></li>
+</ul>
+</li>
+</ul>
+
+  <div class="section" id="coral-uniform-server">
+<h1>12. Coral/Uniform Server<a class="headerlink" href="#coral-uniform-server" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">MUHAMMAD TARMIZI BIN KAMARUDDIN (002321867-D) / mtbink.com / &#64;mtbinkdotcom</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="special-setup">
+<span id="label-uniserver-special-setup"></span><h2>12.1. Special setup<a class="headerlink" href="#special-setup" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Put the <strong>Coral_8_9_2.exe</strong> in a path <strong>without spaces</strong>, usually
+<code class="docutils literal"><span class="pre">%USERPROFILE%</span></code> (becomes <strong>C:\Users\USERNAME</strong>).</p>
+<p>For window <strong>7-Zip self-extracting archive</strong>, simply click <strong>Extract</strong> and
+wait until it finished.</p>
+<p><strong>UniServer</strong> folder is automatically created.</p>
+</li>
+<li><p class="first">Click <strong>C:\Users\USERNAME\UniServer\Start_as_program.exe</strong>.</p>
+<p>For window <strong>Change MySQL Password!</strong>, choose <strong>No</strong>.</p>
+<p>For window <strong>Start-up options skipped!</strong>, choose <strong>Yes</strong>.</p>
+</li>
+<li><p class="first"><strong>Server configuration &gt; Apache &gt; Edit Basic Configuration &gt; Listen port:</strong> <code class="docutils literal"><span class="pre">8080</span></code></p>
+<p>Click <strong>Update Configuration</strong> and close that window.</p>
+</li>
+<li><p class="first">On main window click <strong>Start Apache</strong>.</p>
+<p><code class="docutils literal"><span class="pre">http://localhost:8080/us_splash/index.php</span></code> will be open in a browser.</p>
+<p>Now, click <strong>Stop Apache</strong> and close the main window.</p>
+</li>
+<li><p class="first">I want my website files to be on another drive letter (E:) not current (C:)</p>
+<p>so I need to edit the <code class="docutils literal"><span class="pre">UniServer\usr\local\apache2\conf\httpd.conf</span></code> file:</p>
+<ol class="arabic">
+<li><p class="first">Basically it is just replacing this exact string:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">USERNAME</span><span class="o">/</span><span class="n">UniServer</span><span class="o">/</span><span class="n">www</span>
+</pre></div>
+</div>
+<p>with the path that you want:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">E</span><span class="p">:</span><span class="o">/</span><span class="n">t</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">Dropbox</span><span class="o">/</span><span class="n">i</span>
+</pre></div>
+</div>
+<p>for my setup.</p>
+<p>Beware of <strong>USERNAME</strong> and the forward slash (/).</p>
+<p>At the time of writing, 28 October 2016 (Friday) 09:36:24 PM GMT+08:00, these happen at 2 lines:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Line</span> <span class="mi">261</span> <span class="n">old</span> <span class="p">:</span> <span class="n">DocumentRoot</span> <span class="s2">&quot;C:/Users/USERNAME/UniServer/www&quot;</span>
+<span class="n">Line</span> <span class="mi">261</span> <span class="n">new</span> <span class="p">:</span> <span class="n">DocumentRoot</span> <span class="s2">&quot;E:/t/c/Dropbox/i&quot;</span>
+
+<span class="n">Line</span> <span class="mi">288</span> <span class="n">old</span> <span class="p">:</span> <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">&quot;C:/Users/USERNAME/UniServer/www&quot;</span><span class="o">&gt;</span>
+<span class="n">Line</span> <span class="mi">288</span> <span class="n">new</span> <span class="p">:</span> <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">&quot;E:/t/c/Dropbox/i&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+                    </div>
+                    <div id='div_right' class='mdl-cell mdl-cell--3-col'>
+
+                    </div>
+                </div><!-- /.mdl-grid not for /.mdl-cell--12-col -->
+            </div>
+            <footer class='mdl-mega-footer'>
+                <div class='mdl-mega-footer__middle-section'>
+                    <div class='mdl-mega-footer__drop-down-section'>
+                        <input class='mdl-mega-footer__heading-checkbox' type='checkbox' checked>
+                        <h1 class='mdl-mega-footer__heading'>mtbink.com</h1>
+                        <ul class='mdl-mega-footer__link-list'>
+                            <li>
+                            <a href='../index.html#utility' title='utility'>utility</a>
+                            </li>
+                            <li>
+                            <a href='../index.html#note' title='note'>note</a>
+                            </li>
+                            <li>
+                            <a href='../index.html#software-registry' title='software registry'>software registry</a>
+                            </li>
+                            <li>
+                            <a href='../index.html#product' title='product'>product</a>
+                            </li>
+                            <li>
+                            <a href='../index.html#personal' title='personal'>personal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='mdl-mega-footer__drop-down-section'>
+                        <input class='mdl-mega-footer__heading-checkbox' type='checkbox' checked>
+                        <h1 class='mdl-mega-footer__heading'>find me</h1>
+                        <ul class='mdl-mega-footer__link-list'>
+                            <li>
+                            <a href="http://facebook.com/mtbinkdotcom" title="Facebook">Facebook</a>
+                            </li>
+
+                            <li>
+                            <a href="http://google.com/+mtbink" title="Google+">Google+</a>
+                            </li>
+
+                            <li>
+                            <a href="http://instagram.com/mtbinkdotcom" title="Instagram">Instagram</a>
+                            </li>
+
+                            <li>
+                            <a href="http://twitter.com/mtbinkdotcom" title="Twitter">Twitter</a>
+                            </li>
+
+                            <li>
+                            <a href="https://www.youtube.com/user/mtbinkdotcom" title="YouTube">YouTube</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class='mdl-mega-footer__bottom-section'>
+                    <div class='mdl-logo'>
+                        <p>
+                        <a title='mtbink.com'
+                        href='../index.html'>
+                            <img class='logo' src='../_static/logo.jpg' alt='mtbink.com logo'/>
+                        </a>
+                        </p>
+                        <p>&copy; Copyright <span id='copyright_tarmizi_footer'>2014, 2015, 2016, 2017, 2018 MUHAMMAD TARMIZI BIN KAMARUDDIN (002321867-D) / mtbink.com / @mtbinkdotcom</span>
+                        <br/>
+                        Created in Kuala Lumpur, Malaysia
+                        <br/>
+                        All trademarks, trade names or logos mentioned or used are the property of their respective owners.
+                        </p>
+                        <p style='color: #9e9e9e;'>
+                        <br/>
+                                                mtbink.com 1.123 | 2018-04-23T17:18:59+08:00
+                        <br/><br/>
+                        <small><span id='stat' class='text-muted'></span><span id='stat2' class='text-muted'></span></small>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+        <script>var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+        };</script>
+        <script src='../_static/jquery.js'></script>
+        <script src='../_static/underscore.js'></script>
+        <script src='../_static/doctools.js'></script>
+        <script src='../_static/mtbinkdotcom.js'></script>
+    </body>
+</html>
