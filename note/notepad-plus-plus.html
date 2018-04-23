@@ -1,149 +1,121 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='UTF-8'/>
-        <meta name='viewport'              content='width=device-width,initial-scale=1'/>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+<html><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>6. Notepad++</title>
-        <link rel='shortcut icon' type='image/icon'  href="../_static/favicon.ico?test=1"/>
+        <link rel="shortcut icon" type="image/icon" href="../_static/favicon.ico?test=1">
         
-        <link rel='stylesheet'    type='text/css'    href='../_static/pygments.css'/>
-        <link rel='stylesheet'    type='text/css'    href='../_static/mtbinkdotcom.css'/>
+        <link rel="stylesheet" type="text/css" href="../_static/pygments.css">
+        <link rel="stylesheet" type="text/css" href="../_static/mtbinkdotcom.css">
 
-        <link rel='top'           title='mtbink.com' href='../index.html'/>
-        <link rel='next'          title='7. PHP' href='php.html'/>
-        <link rel='prev'          title='5. Google Cast' href='google-cast.html'/>
+        <link rel="top" title="mtbink.com" href="../index.html">
+        <link rel="next" title="7. PHP" href="php.html">
+        <link rel="prev" title="5. Google Cast" href="google-cast.html">
         
-        <link rel='alternate'     type='application/rss+xml' href='../home.xml'/>
+        <link rel="alternate" type="application/rss+xml" href="../home.xml">
 
-        <link href='https://plus.google.com/110516430179662066042' rel='publisher'/>
-        <link href='https://plus.google.com/110516430179662066042' rel='author'/>
+        <link href="https://plus.google.com/110516430179662066042" rel="publisher">
+        <link href="https://plus.google.com/110516430179662066042" rel="author">
         
-        <meta property='fb:admins' content='100006749618912' />
+        <meta property="fb:admins" content="100006749618912">
         
-        <meta name='mobile-web-app-capable' content='yes'>
+        <meta name="mobile-web-app-capable" content="yes">
         
         <script>var MTBINKDOTCOM_START_TIMESTAMP = new Date();</script>
         
     </head>        
     <body>
-    <div class='mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header'>
-        <header class='mdl-layout__header'>
-            <div class='mdl-layout-icon'></div>
-            <div class='mdl-layout__header-row'>
-                <div class='mdl-layout-spacer'></div>
-                <div class='mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right nfm'>
-                    <form class='search' 
-                          action='../search.html' 
-                          id='formsearch' 
-                          method='get'>
-                        <label class='mdl-button mdl-js-button mdl-button--icon' 
-                               for='fixed-header-drawer-exp'
-                               title='search mtbink.com website'>
-                            <i class='material-icons' style='top:24px;'>&#xE8B6;</i>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-shadow--4dp">
+            <div class="mdl-layout-icon"></div>
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right nfm">
+                    <form class="search" action="../search.html" id="formsearch" method="get">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp" title="search mtbink.com website">
+                            <i class="material-icons" style="top:24px;"></i>
                         </label>
-                        <div class='mdl-textfield__expandable-holder'>
-                            <input class='mdl-textfield__input' 
-                                   type='text' 
-                                   name='q'
-                                   id='fixed-header-drawer-exp'/>
-                            <label class='mdl-textfield__label' for='fixed-header-drawer-exp'>Enter search text</label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="q" id="fixed-header-drawer-exp">
+                            <label class="mdl-textfield__label" for="fixed-header-drawer-exp">Enter search text</label>
                         </div>
-                        <input type='hidden' name='check_keywords' value='yes' />
-                        <input type='hidden' name='area' value='default' />
+                        <input type="hidden" name="check_keywords" value="yes">
+                        <input type="hidden" name="area" value="default">
                     </form> 
                 </div>
-                <a class='mdl-navigation__link'
-                   style='display:none' 
-                   id='drawer_OK' 
-                   title='OK' 
-                   href='javascript:formsearch.submit()'>OK</a>
-                <nav class='mdl-navigation'>
-                    <a class='mdl-navigation__link'
-                       href='../index.html'
-                       title='home'>
-                        <i class='material-icons'>&#xE88A;</i> 
-                        <span class='wider-screen'>home</span>
+                <a class="mdl-navigation__link" style="display:none" id="drawer_OK" title="OK" href="javascript:formsearch.submit()">OK</a>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="../index.html" title="home">
+                        <i class="material-icons"></i> 
+                        <span class="wider-screen">home</span>
                     </a>
-                    <a class='mdl-navigation__link' 
-                       href='google-cast.html' 
-                       title='5. Google Cast' 
-                       accesskey='P'>
-                        <i class='material-icons'>&#xE408;</i> 
-                        <span class='wider-screen'>previous</span>
+                    <a class="mdl-navigation__link" href="google-cast.html" title="5. Google Cast" accesskey="P">
+                        <i class="material-icons"></i> 
+                        <span class="wider-screen">previous</span>
                     </a>
-                    <a class='mdl-navigation__link' 
-                       href='php.html' 
-                       title='7. PHP' 
-                       accesskey='N'>
-                        <span class='wider-screen'>next</span> 
-                        <i class='material-icons'>&#xE409;</i>
+                    <a class="mdl-navigation__link" href="php.html" title="7. PHP" accesskey="N">
+                        <span class="wider-screen">next</span> 
+                        <i class="material-icons"></i>
                     </a>
                 </nav>
             </div>
         </header>
-        <div class='mdl-layout__drawer'>
-            <span class='mdl-layout-title'>table of contents</span>
-                <nav class='mdl-navigation' id='localtoc'>
-<ul>
-<li><a class="reference internal" href="#">6. Notepad++</a><ul>
-<li><a class="reference internal" href="#special-setup">6.1. Special setup</a></li>
-<li><a class="reference internal" href="#why-i-do-not-use-these-styles">6.2. Why I do not use these styles ?</a></li>
-<li><a class="reference internal" href="#best-font">6.3. Best font</a></li>
+        <div class="mdl-layout__drawer mdl-shadow--4dp">
+            <span class="mdl-layout-title">table of contents</span>
+                <nav class="mdl-navigation" id="localtoc">
+<ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 1em;">
+<li><a class="reference internal mdl-navigation__link" href="#notepad" style="line-height: 2.5em; margin: 0px; padding: 0px;">6. Notepad++</a><ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 1em;">
+<li><a class="reference internal mdl-navigation__link" href="#special-setup" style="line-height: 2.5em; margin: 0px; padding: 0px;">6.1. Special setup</a></li>
+<li><a class="reference internal mdl-navigation__link" href="#why-i-do-not-use-these-styles" style="line-height: 2.5em; margin: 0px; padding: 0px;">6.2. Why I do not use these styles ?</a></li>
+<li><a class="reference internal mdl-navigation__link" href="#best-font" style="line-height: 2.5em; margin: 0px; padding: 0px;">6.3. Best font</a></li>
 </ul>
 </li>
 </ul>
 
                 </nav>
-                <span class='mdl-layout-title'>next</span>
-                <nav class='mdl-navigation'>
-                    <a class='mdl-navigation__link' 
-                       href='php.html' 
-                       title='7. PHP'
-                       accesskey='N'>7. PHP</a>
+                <span class="mdl-layout-title">next</span>
+                <nav class="mdl-navigation" style="margin: 0px; padding: 0px 0px 0px 1em;">
+                    <a class="mdl-navigation__link" href="php.html" title="7. PHP" accesskey="N" style="margin: 0px; padding: 0px;">7. PHP</a>
                 </nav>
-                <span class='mdl-layout-title'>previous</span>
-                <nav class='mdl-navigation'>
-                    <a class='mdl-navigation__link' 
-                       href='google-cast.html' 
-                       title='5. Google Cast'
-                       accesskey='P'>5. Google Cast</a>
+                <span class="mdl-layout-title">previous</span>
+                <nav class="mdl-navigation" style="margin: 0px; padding: 0px 0px 0px 1em;">
+                    <a class="mdl-navigation__link" href="google-cast.html" title="5. Google Cast" accesskey="P" style="margin: 0px 0px 5em 0px; padding: 0px;">5. Google Cast</a>
                 </nav>
         </div>
-        <main class='mdl-layout__content'>
-            <div class='page-content'>
-                <div class='mdl-grid'>
-                    <div id='div_content' class='mdl-cell mdl-cell--9-col'>
-                        <div><span id='pageview_counter'></span><span id='text_pageview_of'>&nbsp;</span><span id='total_pageview_counter'></span></div>
-<div class='mdl-grid mdl-tabs__tab-bar2'>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#utility'           title='utility'>utility</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#note'              title='note'>note</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#software-registry' title='software registry'>software registry</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#product'           title='product'>product</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#personal'          title='personal'>personal</a></div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div id="div_content" class="mdl-cell mdl-cell--9-col">
+                        <div><span id="pageview_counter"></span><span id="text_pageview_of">&nbsp;</span><span id="total_pageview_counter"></span></div>
+<div class="mdl-grid mdl-tabs__tab-bar2">
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#utility" title="utility">utility</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="border-bottom: 2px solid #3f51b5; text-align: center;"><a class="mdl-tabs__tab2 is-active" href="../index.html#note" title="note">note</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#software-registry" title="software registry">software registry</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#product" title="product">product</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#personal" title="personal">personal</a></div>
 </div>
-<ul>
-<li><a class="reference internal" href="#">6. Notepad++</a><ul>
+
+
+  <div class="section" id="notepad">
+<div itemscope="itemscope" itemtype="http://schema.org/Article"><h1 itemprop="name" class="mdl-typography--display-1">6. Notepad++<a class="headerlink" href="#notepad" title="Permalink to this headline">¶</a></h1></div>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body"><b>M</b>UHAMMAD <b>T</b>ARMIZI <b>BIN</b> <b>K</b>AMARUDDIN / mtbink.com / @mtbinkdotcom</td>
+</tr>
+</tbody>
+</table><ul style="list-style-type: none;">
+<li><a class="reference internal" href="#notepad">6. Notepad++</a><ul style="list-style-type: none;">
 <li><a class="reference internal" href="#special-setup">6.1. Special setup</a></li>
 <li><a class="reference internal" href="#why-i-do-not-use-these-styles">6.2. Why I do not use these styles ?</a></li>
 <li><a class="reference internal" href="#best-font">6.3. Best font</a></li>
 </ul>
 </li>
 </ul>
-
-  <div class="section" id="notepad">
-<h1>6. Notepad++<a class="headerlink" href="#notepad" title="Permalink to this headline">¶</a></h1>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">MUHAMMAD TARMIZI BIN KAMARUDDIN (002321867-D) / mtbink.com / &#64;mtbinkdotcom</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="special-setup">
-<span id="label-npp-special-setup"></span><h2>6.1. Special setup<a class="headerlink" href="#special-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section mdl-shadow--4dp" id="special-setup" style="padding: 0.5em; margin: 0.5em;">
+<span id="label-npp-special-setup"></span><h2 class="mdl-typography--headline">6.1. Special setup<a class="headerlink" href="#special-setup" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first"><strong>Edit</strong> (menu bar) and tick the following:</p>
 <ol class="arabic simple">
@@ -273,11 +245,11 @@ comment/php/asp zone</strong></li>
 <ol class="arabic">
 <li><p class="first">Run Command Prompt against current active file:</p>
 <ol class="arabic">
-<li><p class="first"><strong>Run &gt; Run... &gt;</strong> <code class="docutils literal"><span class="pre">cmd</span> <span class="pre">/c</span> <span class="pre">&quot;$(FULL_CURRENT_PATH)&quot;</span></code> <strong>&gt; Save...</strong>:</p>
-<p><img alt="images_npp_notepadpp_run" src="../_images/notepadpp_run.png" /></p>
+<li><p class="first"><strong>Run &gt; Run... &gt;</strong> <code class="docutils literal"><span class="pre">cmd</span> <span class="pre">/c</span> <span class="pre">"$(FULL_CURRENT_PATH)"</span></code> <strong>&gt; Save...</strong>:</p>
+<p><img alt="images_npp_notepadpp_run" src="../_images/notepadpp_run.png"></p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">CMD</span></code> <strong>&gt; CTRL &gt;</strong> <code class="docutils literal"><span class="pre">F5</span></code> <strong>&gt; OK</strong>:</p>
-<p><img alt="images_npp_notepadpp_save" src="../_images/notepadpp_save.png" /></p>
+<p><img alt="images_npp_notepadpp_save" src="../_images/notepadpp_save.png"></p>
 </li>
 <li><p class="first">Now, just press <code class="docutils literal"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">F5</span></code> everytime you need to run Command
 Prompt against current active file.</p>
@@ -304,89 +276,89 @@ tick the following:<ol class="arabic">
 </li>
 </ol>
 </div>
-<div class="section" id="why-i-do-not-use-these-styles">
-<h2>6.2. Why I do not use these styles ?<a class="headerlink" href="#why-i-do-not-use-these-styles" title="Permalink to this headline">¶</a></h2>
+<div class="section mdl-shadow--4dp" id="why-i-do-not-use-these-styles" style="padding: 0.5em; margin: 0.5em;">
+<h2 class="mdl-typography--headline">6.2. Why I do not use these styles ?<a class="headerlink" href="#why-i-do-not-use-these-styles" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first"><strong>Default</strong></p>
 <p>White background, already bored looking at VBA</p>
-<p><img alt="images_npp_default" src="../_images/npp_default.png" /></p>
+<p><img alt="images_npp_default" src="../_images/npp_default.png"></p>
 </li>
 <li><p class="first"><strong>Bespin</strong></p>
 <p>Bracket matching is not prominent at all.</p>
-<p><img alt="images_npp_bespin" src="../_images/npp_bespin.png" /></p>
+<p><img alt="images_npp_bespin" src="../_images/npp_bespin.png"></p>
 </li>
 <li><p class="first"><strong>Black board</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_bb" src="../_images/npp_bb.png" /></p>
+<p><img alt="images_npp_bb" src="../_images/npp_bb.png"></p>
 </li>
 <li><p class="first"><strong>Choco</strong></p>
 <p>The colouring is almost like Bespin, but the currently selected text range is not prominent at all; here I highlight from
 <code class="docutils literal"><span class="pre">4...</span></code> to  <code class="docutils literal"><span class="pre">...Obje</span></code> actually:</p>
-<p><img alt="images_npp_choco" src="../_images/npp_choco.png" /></p>
+<p><img alt="images_npp_choco" src="../_images/npp_choco.png"></p>
 </li>
 <li><p class="first"><strong>Hello Kitty</strong></p>
 <p>Too pinkish.</p>
-<p><img alt="images_npp_hk" src="../_images/npp_hk.png" /></p>
+<p><img alt="images_npp_hk" src="../_images/npp_hk.png"></p>
 </li>
 <li><p class="first"><strong>HotFudgeSundae</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_hfs" src="../_images/npp_hfs.png" /></p>
+<p><img alt="images_npp_hfs" src="../_images/npp_hfs.png"></p>
 </li>
 <li><p class="first"><strong>khaki</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_k" src="../_images/npp_k.png" /></p>
+<p><img alt="images_npp_k" src="../_images/npp_k.png"></p>
 </li>
 <li><p class="first"><strong>Mono Industrial</strong></p>
 <p>Whitish font.</p>
-<p><img alt="images_npp_mi" src="../_images/npp_mi.png" /></p>
+<p><img alt="images_npp_mi" src="../_images/npp_mi.png"></p>
 </li>
 <li><p class="first"><strong>Monokai</strong></p>
 <p>The currently selected text range is not prominent at all.</p>
-<p><img alt="images_npp_m" src="../_images/npp_m.png" /></p>
+<p><img alt="images_npp_m" src="../_images/npp_m.png"></p>
 </li>
 <li><p class="first"><strong>MossyLawn</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_ml" src="../_images/npp_ml.png" /></p>
+<p><img alt="images_npp_ml" src="../_images/npp_ml.png"></p>
 </li>
 <li><p class="first"><strong>Obsidian</strong></p>
 <p>The currently selected text range is not prominent at all.</p>
-<p><img alt="images_npp_o" src="../_images/npp_o.png" /></p>
+<p><img alt="images_npp_o" src="../_images/npp_o.png"></p>
 </li>
 <li><p class="first"><strong>Plastic Code Wrap</strong></p>
 <p>The currently selected text range is not prominent at all.</p>
-<p><img alt="images_npp_pcw" src="../_images/npp_pcw.png" /></p>
+<p><img alt="images_npp_pcw" src="../_images/npp_pcw.png"></p>
 </li>
 <li><p class="first"><strong>Ruby Blue</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_rb" src="../_images/npp_rb.png" /></p>
+<p><img alt="images_npp_rb" src="../_images/npp_rb.png"></p>
 </li>
 <li><p class="first"><strong>Solarized-light</strong></p>
 <p>Highlighted variable is very dark.</p>
-<p><img alt="images_npp_sl" src="../_images/npp_sl.png" /></p>
+<p><img alt="images_npp_sl" src="../_images/npp_sl.png"></p>
 </li>
 <li><p class="first"><strong>Solarized</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_s" src="../_images/npp_s.png" /></p>
+<p><img alt="images_npp_s" src="../_images/npp_s.png"></p>
 </li>
 <li><p class="first"><strong>Twilight</strong></p>
 <p>The currently selected text range is not prominent at all.</p>
-<p><img alt="images_npp_t" src="../_images/npp_t.png" /></p>
+<p><img alt="images_npp_t" src="../_images/npp_t.png"></p>
 </li>
 <li><p class="first"><strong>Vibrant Ink</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_vi" src="../_images/npp_vi.png" /></p>
+<p><img alt="images_npp_vi" src="../_images/npp_vi.png"></p>
 </li>
 <li><p class="first"><strong>vim Dark Blue</strong></p>
 <p>Too blue.</p>
-<p><img alt="images_npp_vdb" src="../_images/npp_vdb.png" /></p>
+<p><img alt="images_npp_vdb" src="../_images/npp_vdb.png"></p>
 </li>
 <li><p class="first"><strong>Zenburn</strong></p>
 <p>Highlighted variable is not prominent.</p>
-<p><img alt="images_npp_z" src="../_images/npp_z.png" /></p>
+<p><img alt="images_npp_z" src="../_images/npp_z.png"></p>
 </li>
 <li><p class="first">Currently, <strong>Deep Black</strong>, <strong>Navajo</strong> works fine to me.</p>
-<p><img alt="images_npp_db" src="../_images/npp_db.png" /></p>
-<p><img alt="images_npp_n" src="../_images/npp_n.png" /></p>
+<p><img alt="images_npp_db" src="../_images/npp_db.png"></p>
+<p><img alt="images_npp_n" src="../_images/npp_n.png"></p>
 <p>and this is my testing source code</p>
 <div class="highlight-js"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">testing</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
@@ -394,8 +366,8 @@ tick the following:<ol class="arabic">
 
     <span class="c1">// Object</span>
     <span class="k">return</span> <span class="p">{</span>
-        <span class="s1">&#39;min&#39;</span> <span class="o">:</span> <span class="nx">a</span><span class="p">,</span>
-        <span class="s1">&#39;max&#39;</span> <span class="o">:</span> <span class="nx">b</span>
+        <span class="s1">'min'</span> <span class="o">:</span> <span class="nx">a</span><span class="p">,</span>
+        <span class="s1">'max'</span> <span class="o">:</span> <span class="nx">b</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -403,32 +375,32 @@ tick the following:<ol class="arabic">
 </li>
 </ol>
 </div>
-<div class="section" id="best-font">
-<h2>6.3. Best font<a class="headerlink" href="#best-font" title="Permalink to this headline">¶</a></h2>
+<div class="section mdl-shadow--4dp" id="best-font" style="padding: 0.5em; margin: 0.5em;">
+<h2 class="mdl-typography--headline">6.3. Best font<a class="headerlink" href="#best-font" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">monospace:</p>
 <ul>
 <li><p class="first"><a class="reference external" href="http://sourcefoundry.org/hack">Hack</a></p>
-<p><img alt="images_npp_mono_hack" src="../_images/npp_mono_hack.png" /></p>
+<p><img alt="images_npp_mono_hack" src="../_images/npp_mono_hack.png"></p>
 </li>
 <li><p class="first">Consolas</p>
-<p><img alt="images_npp_mono_consolas" src="../_images/npp_mono_consolas.png" /></p>
+<p><img alt="images_npp_mono_consolas" src="../_images/npp_mono_consolas.png"></p>
 </li>
 <li><p class="first">Lucida Sans Typewrite</p>
-<p><img alt="images_npp_mono_lucida_sans" src="../_images/npp_mono_lucida_sans.png" /></p>
+<p><img alt="images_npp_mono_lucida_sans" src="../_images/npp_mono_lucida_sans.png"></p>
 </li>
 <li><p class="first">Courier New</p>
-<p><img alt="images_npp_mono_courier" src="../_images/npp_mono_courier.png" /></p>
+<p><img alt="images_npp_mono_courier" src="../_images/npp_mono_courier.png"></p>
 </li>
 <li><p class="first">Source Code Pro Semibold (Google Fonts)</p>
-<p><img alt="images_npp_mono_source" src="../_images/npp_mono_source.png" /></p>
+<p><img alt="images_npp_mono_source" src="../_images/npp_mono_source.png"></p>
 </li>
 </ul>
 </li>
 <li><p class="first">not monospace:</p>
 <ul>
 <li><p class="first">MV Boli</p>
-<p><img alt="images_npp_font_mv" src="../_images/npp_font_mv.png" /></p>
+<p><img alt="images_npp_font_mv" src="../_images/npp_font_mv.png"></p>
 </li>
 </ul>
 </li>
@@ -439,10 +411,10 @@ Microsoft Excel in Windows 7 versus Microsoft Excel in Android.:
 No problem found so far as of 25 June 2016 (Saturday) 12:24:55 PM GMT+08:00</p>
 <ul>
 <li><p class="first">Microsoft Excel in Windows 7</p>
-<p><img alt="images_npp_monospace_excel_windows_7" src="../_images/npp_monospace_excel_windows_7.png" /></p>
+<p><img alt="images_npp_monospace_excel_windows_7" src="../_images/npp_monospace_excel_windows_7.png"></p>
 </li>
 <li><p class="first">Microsoft Excel in Android</p>
-<p><img alt="images_npp_monospace_excel_android" src="../_images/npp_monospace_excel_android.png" /></p>
+<p><img alt="images_npp_monospace_excel_android" src="../_images/npp_monospace_excel_android.png"></p>
 </li>
 </ul>
 </li>
@@ -452,80 +424,79 @@ No problem found so far as of 25 June 2016 (Saturday) 12:24:55 PM GMT+08:00</p>
 
 
                     </div>
-                    <div id='div_right' class='mdl-cell mdl-cell--3-col'>
+                    <div id="div_right" class="mdl-cell mdl-cell--3-col">
 
                     </div>
                 </div><!-- /.mdl-grid not for /.mdl-cell--12-col -->
             </div>
-            <footer class='mdl-mega-footer'>
-                <div class='mdl-mega-footer__middle-section'>
-                    <div class='mdl-mega-footer__drop-down-section'>
-                        <input class='mdl-mega-footer__heading-checkbox' type='checkbox' checked>
-                        <h1 class='mdl-mega-footer__heading'>mtbink.com</h1>
-                        <ul class='mdl-mega-footer__link-list'>
+            <footer class="mdl-mega-footer">
+                <div class="mdl-mega-footer__middle-section">
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked="">
+                        <h1 class="mdl-mega-footer__heading mdl-typography--display-1">mtbink.com</h1>
+                        <ul class="mdl-mega-footer__link-list">
                             <li>
-                            <a href='../index.html#utility' title='utility'>utility</a>
+                            <a href="../index.html#utility" title="utility" style="line-height: 2.5em;">utility</a>
                             </li>
                             <li>
-                            <a href='../index.html#note' title='note'>note</a>
+                            <a href="../index.html#note" title="note" style="line-height: 2.5em;">note</a>
                             </li>
                             <li>
-                            <a href='../index.html#software-registry' title='software registry'>software registry</a>
+                            <a href="../index.html#software-registry" title="software registry" style="line-height: 2.5em;">software registry</a>
                             </li>
                             <li>
-                            <a href='../index.html#product' title='product'>product</a>
+                            <a href="../index.html#product" title="product" style="line-height: 2.5em;">product</a>
                             </li>
                             <li>
-                            <a href='../index.html#personal' title='personal'>personal</a>
+                            <a href="../index.html#personal" title="personal" style="line-height: 2.5em;">personal</a>
                             </li>
                         </ul>
                     </div>
-                    <div class='mdl-mega-footer__drop-down-section'>
-                        <input class='mdl-mega-footer__heading-checkbox' type='checkbox' checked>
-                        <h1 class='mdl-mega-footer__heading'>find me</h1>
-                        <ul class='mdl-mega-footer__link-list'>
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked="">
+                        <h1 class="mdl-mega-footer__heading mdl-typography--display-1">find me</h1>
+                        <ul class="mdl-mega-footer__link-list">
                             <li>
-                            <a href="http://facebook.com/mtbinkdotcom" title="Facebook">Facebook</a>
+                            <a href="http://facebook.com/mtbinkdotcom" title="Facebook" style="line-height: 2.5em;">Facebook</a>
                             </li>
 
                             <li>
-                            <a href="http://google.com/+mtbink" title="Google+">Google+</a>
+                            <a href="http://google.com/+mtbink" title="Google+" style="line-height: 2.5em;">Google+</a>
                             </li>
 
                             <li>
-                            <a href="http://instagram.com/mtbinkdotcom" title="Instagram">Instagram</a>
+                            <a href="http://instagram.com/mtbinkdotcom" title="Instagram" style="line-height: 2.5em;">Instagram</a>
                             </li>
 
                             <li>
-                            <a href="http://twitter.com/mtbinkdotcom" title="Twitter">Twitter</a>
+                            <a href="http://twitter.com/mtbinkdotcom" title="Twitter" style="line-height: 2.5em;">Twitter</a>
                             </li>
 
                             <li>
-                            <a href="https://www.youtube.com/user/mtbinkdotcom" title="YouTube">YouTube</a>
+                            <a href="https://www.youtube.com/user/mtbinkdotcom" title="YouTube" style="line-height: 2.5em;">YouTube</a>
                             </li>
 
                         </ul>
                     </div>
                 </div>
-                <div class='mdl-mega-footer__bottom-section'>
-                    <div class='mdl-logo'>
+                <div class="mdl-mega-footer__bottom-section">
+                    <div class="mdl-logo">
                         <p>
-                        <a title='mtbink.com'
-                        href='../index.html'>
-                            <img class='logo' src='../_static/logo.jpg' alt='mtbink.com logo'/>
+                        <a title="mtbink.com" href="../index.html">
+                            <img class="logo" src="../_static/logo.jpg" alt="mtbink.com logo">
                         </a>
                         </p>
-                        <p>&copy; Copyright <span id='copyright_tarmizi_footer'>2014, 2015, 2016, 2017, 2018 MUHAMMAD TARMIZI BIN KAMARUDDIN (002321867-D) / mtbink.com / @mtbinkdotcom</span>
-                        <br/>
+                        <p>© Copyright <span id="copyright_tarmizi_footer">2014, 2015, 2016, 2017, 2018 <b>M</b>UHAMMAD <b>T</b>ARMIZI <b>BIN</b> <b>K</b>AMARUDDIN / mtbink.com / @mtbinkdotcom</span>
+                        <br>
                         Created in Kuala Lumpur, Malaysia
-                        <br/>
+                        <br>
                         All trademarks, trade names or logos mentioned or used are the property of their respective owners.
                         </p>
-                        <p style='color: #9e9e9e;'>
-                        <br/>
+                        <p style="color: #9e9e9e;">
+                        <br>
                                                 mtbink.com 1.123 | 2018-04-23T17:18:59+08:00
-                        <br/><br/>
-                        <small><span id='stat' class='text-muted'></span><span id='stat2' class='text-muted'></span></small>
+                        <br><br>
+                        <small><span id="stat" class="text-muted"></span><span id="stat2" class="text-muted"></span></small>
                         </p>
                     </div>
                 </div>
@@ -539,9 +510,9 @@ No problem found so far as of 25 June 2016 (Saturday) 12:24:55 PM GMT+08:00</p>
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
         };</script>
-        <script src='../_static/jquery.js'></script>
-        <script src='../_static/underscore.js'></script>
-        <script src='../_static/doctools.js'></script>
-        <script src='../_static/mtbinkdotcom.js'></script>
-    </body>
-</html>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mtbinkdotcom.js"></script>
+    
+</body></html>

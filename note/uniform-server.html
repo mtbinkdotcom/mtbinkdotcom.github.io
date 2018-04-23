@@ -1,145 +1,117 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='UTF-8'/>
-        <meta name='viewport'              content='width=device-width,initial-scale=1'/>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+<html><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>12. Coral/Uniform Server</title>
-        <link rel='shortcut icon' type='image/icon'  href="../_static/favicon.ico?test=1"/>
+        <link rel="shortcut icon" type="image/icon" href="../_static/favicon.ico?test=1">
         
-        <link rel='stylesheet'    type='text/css'    href='../_static/pygments.css'/>
-        <link rel='stylesheet'    type='text/css'    href='../_static/mtbinkdotcom.css'/>
+        <link rel="stylesheet" type="text/css" href="../_static/pygments.css">
+        <link rel="stylesheet" type="text/css" href="../_static/mtbinkdotcom.css">
 
-        <link rel='top'           title='mtbink.com' href='../index.html'/>
-        <link rel='next'          title='13. Yamaha PSR-E333' href='yamaha-psr-e333.html'/>
-        <link rel='prev'          title='11. To-do list after formatting Android' href='to-do-list-after-formatting-android.html'/>
+        <link rel="top" title="mtbink.com" href="../index.html">
+        <link rel="next" title="13. Yamaha PSR-E333" href="yamaha-psr-e333.html">
+        <link rel="prev" title="11. To-do list after formatting Android" href="to-do-list-after-formatting-android.html">
         
-        <link rel='alternate'     type='application/rss+xml' href='../home.xml'/>
+        <link rel="alternate" type="application/rss+xml" href="../home.xml">
 
-        <link href='https://plus.google.com/110516430179662066042' rel='publisher'/>
-        <link href='https://plus.google.com/110516430179662066042' rel='author'/>
+        <link href="https://plus.google.com/110516430179662066042" rel="publisher">
+        <link href="https://plus.google.com/110516430179662066042" rel="author">
         
-        <meta property='fb:admins' content='100006749618912' />
+        <meta property="fb:admins" content="100006749618912">
         
-        <meta name='mobile-web-app-capable' content='yes'>
+        <meta name="mobile-web-app-capable" content="yes">
         
         <script>var MTBINKDOTCOM_START_TIMESTAMP = new Date();</script>
         
     </head>        
     <body>
-    <div class='mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header'>
-        <header class='mdl-layout__header'>
-            <div class='mdl-layout-icon'></div>
-            <div class='mdl-layout__header-row'>
-                <div class='mdl-layout-spacer'></div>
-                <div class='mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right nfm'>
-                    <form class='search' 
-                          action='../search.html' 
-                          id='formsearch' 
-                          method='get'>
-                        <label class='mdl-button mdl-js-button mdl-button--icon' 
-                               for='fixed-header-drawer-exp'
-                               title='search mtbink.com website'>
-                            <i class='material-icons' style='top:24px;'>&#xE8B6;</i>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-shadow--4dp">
+            <div class="mdl-layout-icon"></div>
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right nfm">
+                    <form class="search" action="../search.html" id="formsearch" method="get">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp" title="search mtbink.com website">
+                            <i class="material-icons" style="top:24px;"></i>
                         </label>
-                        <div class='mdl-textfield__expandable-holder'>
-                            <input class='mdl-textfield__input' 
-                                   type='text' 
-                                   name='q'
-                                   id='fixed-header-drawer-exp'/>
-                            <label class='mdl-textfield__label' for='fixed-header-drawer-exp'>Enter search text</label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="q" id="fixed-header-drawer-exp">
+                            <label class="mdl-textfield__label" for="fixed-header-drawer-exp">Enter search text</label>
                         </div>
-                        <input type='hidden' name='check_keywords' value='yes' />
-                        <input type='hidden' name='area' value='default' />
+                        <input type="hidden" name="check_keywords" value="yes">
+                        <input type="hidden" name="area" value="default">
                     </form> 
                 </div>
-                <a class='mdl-navigation__link'
-                   style='display:none' 
-                   id='drawer_OK' 
-                   title='OK' 
-                   href='javascript:formsearch.submit()'>OK</a>
-                <nav class='mdl-navigation'>
-                    <a class='mdl-navigation__link'
-                       href='../index.html'
-                       title='home'>
-                        <i class='material-icons'>&#xE88A;</i> 
-                        <span class='wider-screen'>home</span>
+                <a class="mdl-navigation__link" style="display:none" id="drawer_OK" title="OK" href="javascript:formsearch.submit()">OK</a>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="../index.html" title="home">
+                        <i class="material-icons"></i> 
+                        <span class="wider-screen">home</span>
                     </a>
-                    <a class='mdl-navigation__link' 
-                       href='to-do-list-after-formatting-android.html' 
-                       title='11. To-do list after formatting Android' 
-                       accesskey='P'>
-                        <i class='material-icons'>&#xE408;</i> 
-                        <span class='wider-screen'>previous</span>
+                    <a class="mdl-navigation__link" href="to-do-list-after-formatting-android.html" title="11. To-do list after formatting Android" accesskey="P">
+                        <i class="material-icons"></i> 
+                        <span class="wider-screen">previous</span>
                     </a>
-                    <a class='mdl-navigation__link' 
-                       href='yamaha-psr-e333.html' 
-                       title='13. Yamaha PSR-E333' 
-                       accesskey='N'>
-                        <span class='wider-screen'>next</span> 
-                        <i class='material-icons'>&#xE409;</i>
+                    <a class="mdl-navigation__link" href="yamaha-psr-e333.html" title="13. Yamaha PSR-E333" accesskey="N">
+                        <span class="wider-screen">next</span> 
+                        <i class="material-icons"></i>
                     </a>
                 </nav>
             </div>
         </header>
-        <div class='mdl-layout__drawer'>
-            <span class='mdl-layout-title'>table of contents</span>
-                <nav class='mdl-navigation' id='localtoc'>
-<ul>
-<li><a class="reference internal" href="#">12. Coral/Uniform Server</a><ul>
-<li><a class="reference internal" href="#special-setup">12.1. Special setup</a></li>
+        <div class="mdl-layout__drawer mdl-shadow--4dp">
+            <span class="mdl-layout-title">table of contents</span>
+                <nav class="mdl-navigation" id="localtoc">
+<ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 1em;">
+<li><a class="reference internal mdl-navigation__link" href="#coral-uniform-server" style="line-height: 2.5em; margin: 0px; padding: 0px;">12. Coral/Uniform Server</a><ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 1em;">
+<li><a class="reference internal mdl-navigation__link" href="#special-setup" style="line-height: 2.5em; margin: 0px; padding: 0px;">12.1. Special setup</a></li>
 </ul>
 </li>
 </ul>
 
                 </nav>
-                <span class='mdl-layout-title'>next</span>
-                <nav class='mdl-navigation'>
-                    <a class='mdl-navigation__link' 
-                       href='yamaha-psr-e333.html' 
-                       title='13. Yamaha PSR-E333'
-                       accesskey='N'>13. Yamaha PSR-E333</a>
+                <span class="mdl-layout-title">next</span>
+                <nav class="mdl-navigation" style="margin: 0px; padding: 0px 0px 0px 1em;">
+                    <a class="mdl-navigation__link" href="yamaha-psr-e333.html" title="13. Yamaha PSR-E333" accesskey="N" style="margin: 0px; padding: 0px;">13. Yamaha PSR-E333</a>
                 </nav>
-                <span class='mdl-layout-title'>previous</span>
-                <nav class='mdl-navigation'>
-                    <a class='mdl-navigation__link' 
-                       href='to-do-list-after-formatting-android.html' 
-                       title='11. To-do list after formatting Android'
-                       accesskey='P'>11. To-do list after formatting Android</a>
+                <span class="mdl-layout-title">previous</span>
+                <nav class="mdl-navigation" style="margin: 0px; padding: 0px 0px 0px 1em;">
+                    <a class="mdl-navigation__link" href="to-do-list-after-formatting-android.html" title="11. To-do list after formatting Android" accesskey="P" style="margin: 0px 0px 5em 0px; padding: 0px;">11. To-do list after formatting Android</a>
                 </nav>
         </div>
-        <main class='mdl-layout__content'>
-            <div class='page-content'>
-                <div class='mdl-grid'>
-                    <div id='div_content' class='mdl-cell mdl-cell--9-col'>
-                        <div><span id='pageview_counter'></span><span id='text_pageview_of'>&nbsp;</span><span id='total_pageview_counter'></span></div>
-<div class='mdl-grid mdl-tabs__tab-bar2'>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#utility'           title='utility'>utility</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#note'              title='note'>note</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#software-registry' title='software registry'>software registry</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#product'           title='product'>product</a></div>
-    <div class='mdl-cell mdl-cell--2-col'><a class='mdl-tabs__tab2' href='../index.html#personal'          title='personal'>personal</a></div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div id="div_content" class="mdl-cell mdl-cell--9-col">
+                        <div><span id="pageview_counter"></span><span id="text_pageview_of">&nbsp;</span><span id="total_pageview_counter"></span></div>
+<div class="mdl-grid mdl-tabs__tab-bar2">
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#utility" title="utility">utility</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="border-bottom: 2px solid #3f51b5; text-align: center;"><a class="mdl-tabs__tab2 is-active" href="../index.html#note" title="note">note</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#software-registry" title="software registry">software registry</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#product" title="product">product</a></div>
+    <div class="mdl-cell mdl-cell--2-col" style="text-align: center;"><a class="mdl-tabs__tab2" href="../index.html#personal" title="personal">personal</a></div>
 </div>
-<ul>
-<li><a class="reference internal" href="#">12. Coral/Uniform Server</a><ul>
+
+
+  <div class="section" id="coral-uniform-server">
+<div itemscope="itemscope" itemtype="http://schema.org/Article"><h1 itemprop="name" class="mdl-typography--display-1">12. Coral/Uniform Server<a class="headerlink" href="#coral-uniform-server" title="Permalink to this headline">¶</a></h1></div>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body"><b>M</b>UHAMMAD <b>T</b>ARMIZI <b>BIN</b> <b>K</b>AMARUDDIN / mtbink.com / @mtbinkdotcom</td>
+</tr>
+</tbody>
+</table><ul style="list-style-type: none;">
+<li><a class="reference internal" href="#coral-uniform-server">12. Coral/Uniform Server</a><ul style="list-style-type: none;">
 <li><a class="reference internal" href="#special-setup">12.1. Special setup</a></li>
 </ul>
 </li>
 </ul>
-
-  <div class="section" id="coral-uniform-server">
-<h1>12. Coral/Uniform Server<a class="headerlink" href="#coral-uniform-server" title="Permalink to this headline">¶</a></h1>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">MUHAMMAD TARMIZI BIN KAMARUDDIN (002321867-D) / mtbink.com / &#64;mtbinkdotcom</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="special-setup">
-<span id="label-uniserver-special-setup"></span><h2>12.1. Special setup<a class="headerlink" href="#special-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section mdl-shadow--4dp" id="special-setup" style="padding: 0.5em; margin: 0.5em;">
+<span id="label-uniserver-special-setup"></span><h2 class="mdl-typography--headline">12.1. Special setup<a class="headerlink" href="#special-setup" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Put the <strong>Coral_8_9_2.exe</strong> in a path <strong>without spaces</strong>, usually
 <code class="docutils literal"><span class="pre">%USERPROFILE%</span></code> (becomes <strong>C:\Users\USERNAME</strong>).</p>
@@ -172,11 +144,11 @@ wait until it finished.</p>
 <p>for my setup.</p>
 <p>Beware of <strong>USERNAME</strong> and the forward slash (/).</p>
 <p>At the time of writing, 28 October 2016 (Friday) 09:36:24 PM GMT+08:00, these happen at 2 lines:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Line</span> <span class="mi">261</span> <span class="n">old</span> <span class="p">:</span> <span class="n">DocumentRoot</span> <span class="s2">&quot;C:/Users/USERNAME/UniServer/www&quot;</span>
-<span class="n">Line</span> <span class="mi">261</span> <span class="n">new</span> <span class="p">:</span> <span class="n">DocumentRoot</span> <span class="s2">&quot;E:/t/c/Dropbox/i&quot;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Line</span> <span class="mi">261</span> <span class="n">old</span> <span class="p">:</span> <span class="n">DocumentRoot</span> <span class="s2">"C:/Users/USERNAME/UniServer/www"</span>
+<span class="n">Line</span> <span class="mi">261</span> <span class="n">new</span> <span class="p">:</span> <span class="n">DocumentRoot</span> <span class="s2">"E:/t/c/Dropbox/i"</span>
 
-<span class="n">Line</span> <span class="mi">288</span> <span class="n">old</span> <span class="p">:</span> <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">&quot;C:/Users/USERNAME/UniServer/www&quot;</span><span class="o">&gt;</span>
-<span class="n">Line</span> <span class="mi">288</span> <span class="n">new</span> <span class="p">:</span> <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">&quot;E:/t/c/Dropbox/i&quot;</span><span class="o">&gt;</span>
+<span class="n">Line</span> <span class="mi">288</span> <span class="n">old</span> <span class="p">:</span> <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">"C:/Users/USERNAME/UniServer/www"</span><span class="o">&gt;</span>
+<span class="n">Line</span> <span class="mi">288</span> <span class="n">new</span> <span class="p">:</span> <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">"E:/t/c/Dropbox/i"</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -188,80 +160,79 @@ wait until it finished.</p>
 
 
                     </div>
-                    <div id='div_right' class='mdl-cell mdl-cell--3-col'>
+                    <div id="div_right" class="mdl-cell mdl-cell--3-col">
 
                     </div>
                 </div><!-- /.mdl-grid not for /.mdl-cell--12-col -->
             </div>
-            <footer class='mdl-mega-footer'>
-                <div class='mdl-mega-footer__middle-section'>
-                    <div class='mdl-mega-footer__drop-down-section'>
-                        <input class='mdl-mega-footer__heading-checkbox' type='checkbox' checked>
-                        <h1 class='mdl-mega-footer__heading'>mtbink.com</h1>
-                        <ul class='mdl-mega-footer__link-list'>
+            <footer class="mdl-mega-footer">
+                <div class="mdl-mega-footer__middle-section">
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked="">
+                        <h1 class="mdl-mega-footer__heading mdl-typography--display-1">mtbink.com</h1>
+                        <ul class="mdl-mega-footer__link-list">
                             <li>
-                            <a href='../index.html#utility' title='utility'>utility</a>
+                            <a href="../index.html#utility" title="utility" style="line-height: 2.5em;">utility</a>
                             </li>
                             <li>
-                            <a href='../index.html#note' title='note'>note</a>
+                            <a href="../index.html#note" title="note" style="line-height: 2.5em;">note</a>
                             </li>
                             <li>
-                            <a href='../index.html#software-registry' title='software registry'>software registry</a>
+                            <a href="../index.html#software-registry" title="software registry" style="line-height: 2.5em;">software registry</a>
                             </li>
                             <li>
-                            <a href='../index.html#product' title='product'>product</a>
+                            <a href="../index.html#product" title="product" style="line-height: 2.5em;">product</a>
                             </li>
                             <li>
-                            <a href='../index.html#personal' title='personal'>personal</a>
+                            <a href="../index.html#personal" title="personal" style="line-height: 2.5em;">personal</a>
                             </li>
                         </ul>
                     </div>
-                    <div class='mdl-mega-footer__drop-down-section'>
-                        <input class='mdl-mega-footer__heading-checkbox' type='checkbox' checked>
-                        <h1 class='mdl-mega-footer__heading'>find me</h1>
-                        <ul class='mdl-mega-footer__link-list'>
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked="">
+                        <h1 class="mdl-mega-footer__heading mdl-typography--display-1">find me</h1>
+                        <ul class="mdl-mega-footer__link-list">
                             <li>
-                            <a href="http://facebook.com/mtbinkdotcom" title="Facebook">Facebook</a>
+                            <a href="http://facebook.com/mtbinkdotcom" title="Facebook" style="line-height: 2.5em;">Facebook</a>
                             </li>
 
                             <li>
-                            <a href="http://google.com/+mtbink" title="Google+">Google+</a>
+                            <a href="http://google.com/+mtbink" title="Google+" style="line-height: 2.5em;">Google+</a>
                             </li>
 
                             <li>
-                            <a href="http://instagram.com/mtbinkdotcom" title="Instagram">Instagram</a>
+                            <a href="http://instagram.com/mtbinkdotcom" title="Instagram" style="line-height: 2.5em;">Instagram</a>
                             </li>
 
                             <li>
-                            <a href="http://twitter.com/mtbinkdotcom" title="Twitter">Twitter</a>
+                            <a href="http://twitter.com/mtbinkdotcom" title="Twitter" style="line-height: 2.5em;">Twitter</a>
                             </li>
 
                             <li>
-                            <a href="https://www.youtube.com/user/mtbinkdotcom" title="YouTube">YouTube</a>
+                            <a href="https://www.youtube.com/user/mtbinkdotcom" title="YouTube" style="line-height: 2.5em;">YouTube</a>
                             </li>
 
                         </ul>
                     </div>
                 </div>
-                <div class='mdl-mega-footer__bottom-section'>
-                    <div class='mdl-logo'>
+                <div class="mdl-mega-footer__bottom-section">
+                    <div class="mdl-logo">
                         <p>
-                        <a title='mtbink.com'
-                        href='../index.html'>
-                            <img class='logo' src='../_static/logo.jpg' alt='mtbink.com logo'/>
+                        <a title="mtbink.com" href="../index.html">
+                            <img class="logo" src="../_static/logo.jpg" alt="mtbink.com logo">
                         </a>
                         </p>
-                        <p>&copy; Copyright <span id='copyright_tarmizi_footer'>2014, 2015, 2016, 2017, 2018 MUHAMMAD TARMIZI BIN KAMARUDDIN (002321867-D) / mtbink.com / @mtbinkdotcom</span>
-                        <br/>
+                        <p>© Copyright <span id="copyright_tarmizi_footer">2014, 2015, 2016, 2017, 2018 <b>M</b>UHAMMAD <b>T</b>ARMIZI <b>BIN</b> <b>K</b>AMARUDDIN / mtbink.com / @mtbinkdotcom</span>
+                        <br>
                         Created in Kuala Lumpur, Malaysia
-                        <br/>
+                        <br>
                         All trademarks, trade names or logos mentioned or used are the property of their respective owners.
                         </p>
-                        <p style='color: #9e9e9e;'>
-                        <br/>
+                        <p style="color: #9e9e9e;">
+                        <br>
                                                 mtbink.com 1.123 | 2018-04-23T17:18:59+08:00
-                        <br/><br/>
-                        <small><span id='stat' class='text-muted'></span><span id='stat2' class='text-muted'></span></small>
+                        <br><br>
+                        <small><span id="stat" class="text-muted"></span><span id="stat2" class="text-muted"></span></small>
                         </p>
                     </div>
                 </div>
@@ -275,9 +246,9 @@ wait until it finished.</p>
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
         };</script>
-        <script src='../_static/jquery.js'></script>
-        <script src='../_static/underscore.js'></script>
-        <script src='../_static/doctools.js'></script>
-        <script src='../_static/mtbinkdotcom.js'></script>
-    </body>
-</html>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/mtbinkdotcom.js"></script>
+    
+</body></html>
